@@ -6,14 +6,15 @@ export default function ProductPage(){
     const [product, setProduct] = useState({});
     useEffect(() =>{
         async function fetchPageData() {
-            const response = await fetch(`https://fakestoreapi.com/products/${id}`).then((response) =>{response.json()});
-            setProduct(response);
+            const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+            const data = await response.json();
+            setProduct(data);
         }
         fetchPageData();
-    })
+    }, [])
     return(
         <div className="productIndivPage">
-            <img src={`${product.image}`}></img>
+            <img className="productIndividualImage" src={`${product.image}`}></img>
             <h1>{product.title}</h1>
             <p>{product.description}</p>
         </div>

@@ -1,18 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: rgba(110, 68, 68, 0.87);
+  background-color: #ffffff;
+  font-size: 10px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+}
+body{
+  display: block;
+}
+.navbarWrapper{
+  background-color: orange;
+  position: sticky;
+  border-radius: 0.8rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  border: 0.4rem solid black;
+}
+.navbar img{
+  max-width: 4rem;
 }
 
+.productImage{
+  max-width: 15rem;
+  max-height: 10rem;
+}
+.productIndividualImage{
+  max-width: 40rem;
+  max-height: 40rem;
+}
+.LoadingText{
+  font-size: 2.5rem;
+}
+.productCard{
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+    
+    width: 27rem;
+    text-align: center;
+    display: block;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    border: 0.35rem solid black;
+    border-radius: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    transition: 0.25s box-shadow ease-out;
+}
+.productCard:hover{
+  box-shadow: 1.5rem 1rem 0.7rem 0rem #3d2812;
+  opacity: 0.9;
+}
+.productCard h2{
+    font-family: "Rubik", sans-serif;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #161616;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+.productCard p{
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: brown;
+}
+.productsDisplay{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 a {
   font-weight: 500;
   color: #646cff;

@@ -5,9 +5,9 @@ export default function IndividualProduct(props){
     }
     return (
         <div className={"productCard"} onClick={linkToProductPage}>
-            <img src={props.imageSource} id="productImage"></img>
-            <h2>{props.productName}</h2>
-            <p>{props.price}</p>
+            <img src={props.imageSource} className="productImage"></img>
+            <h2 className="productName">{props.productName}</h2>
+            <p>{`$${props.price}`}</p>
         </div>
     )
-}
+}   
